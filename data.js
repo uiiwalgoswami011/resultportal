@@ -1,4 +1,4 @@
-const resultsData = [
+const results = [
   {
     title: "Bihar Board 10th Result 2026",
     link: "bihar-board-10th-result-2026.html",
