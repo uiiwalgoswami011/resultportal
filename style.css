@@ -237,3 +237,12 @@ footer p {
     margin-top: -40px;
   }
 }
+#resultList li {
+  position: relative;
+}
+
+#resultList li a,
+#resultList li p {
+  position: relative;
+  z-index: 10;
+}
