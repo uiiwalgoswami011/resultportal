@@ -37,7 +37,7 @@ const results = [
   },
   {
     title: "SSC GD Result 2026",
-    link: "sscgd.html",
+    link: "sscgd-result-2026.html",
     status: "Coming Soon",
     tag: "Exam"
   },
