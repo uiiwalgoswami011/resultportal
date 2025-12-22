@@ -340,3 +340,109 @@ footer p {
   background: linear-gradient(135deg, #6366f1, #22d3ee);
   border-radius: 999px;
 }
+/* =====================================
+   ULTRA PREMIUM RESULT PORTAL DESIGN
+   SAFE • MODERN • CLICK FRIENDLY
+===================================== */
+
+#resultList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 20px;
+}
+
+/* Card */
+#resultList li {
+  background: linear-gradient(135deg, #ffffff, #f1f5ff);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(99,102,241,0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient glow on hover */
+#resultList li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(99,102,241,0.15),
+    rgba(34,211,238,0.15)
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+#resultList li:hover::after {
+  opacity: 1;
+}
+
+#resultList li:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.14),
+    inset 0 0 0 1px rgba(99,102,241,0.2);
+}
+
+/* Title link */
+#resultList li a {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  color: #1e3a8a;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+#resultList li a:hover {
+  text-decoration: underline;
+}
+
+/* Subtitle / status */
+#resultList li p {
+  font-size: 14.5px;
+  color: #374151;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Premium badge (optional) */
+.result-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(99,102,241,0.45);
+}
+
+/* Mobile polish */
+@media (max-width: 600px) {
+  #resultList {
+    grid-template-columns: 1fr;
+  }
+
+  #resultList li {
+    padding: 18px;
+  }
+
+  #resultList li a {
+    font-size: 17px;
+  }
+}
