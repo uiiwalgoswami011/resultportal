@@ -2,20 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const list = document.getElementById("resultList");
 
   if (!list) {
-    console.error("resultList not found");
+    console.log("resultList not found");
+    return;
+  }
+
+  if (typeof results === "undefined") {
+    console.log("results not defined");
     return;
   }
 
   results.forEach(item => {
     const li = document.createElement("li");
 
-    li.innerHTML = `
-      <a href="${item.link}" style="cursor:pointer;">
-        ${item.title}
-      </a>
-      <p>${item.desc || ""}</p>
-    `;
+    const a = document.createElement("a");
+    a.href = item.link;
+    a.textContent = item.title;
 
+    li.appendChild(a);
     list.appendChild(li);
   });
 });
