@@ -121,15 +121,6 @@ ul li, ol li {
   overflow: hidden;
 }
 
-#resultList li::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, #6366f1, #22d3ee);
-  opacity: 0;
-  transition: 0.35s;
-  pointer-events: none;
-}
 
 #resultList li:hover::before {
   opacity: 0.08;
@@ -245,4 +236,18 @@ footer p {
 #resultList li p {
   position: relative;
   z-index: 10;
+}
+#resultList li {
+  position: relative;
+}
+
+#resultList li a {
+  display: block;
+  color: #1e40af;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#resultList li a:hover {
+  text-decoration: underline;
 }
