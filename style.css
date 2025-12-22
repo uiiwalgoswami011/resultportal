@@ -282,3 +282,61 @@ footer p {
   all: revert;
   display: block;
 }
+/* ===============================
+   PREMIUM HOMEPAGE RESULT CARDS
+   (SAFE – NO CLICK ISSUE)
+================================ */
+
+#resultList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+#resultList li {
+  background: linear-gradient(145deg, #ffffff, #f3f6ff);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#resultList li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* Title link */
+#resultList li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+#resultList li a:hover {
+  text-decoration: underline;
+}
+
+/* Description / status */
+#resultList li p {
+  font-size: 14px;
+  color: #374151;
+  margin: 0;
+}
+
+/* Optional badge */
+.result-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  border-radius: 999px;
+}
