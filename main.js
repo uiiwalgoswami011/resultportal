@@ -1,13 +1,21 @@
-const ul = document.getElementById("resultList");
+document.addEventListener("DOMContentLoaded", function () {
+  const list = document.getElementById("resultList");
 
-resultsData.forEach(r => {
-  ul.innerHTML += `
-    <li>
-      <a href="${r.link}">${r.title}</a>
-      <p>
-        Status: <b>${r.status}</b>
-        ${r.tag ? `<span class="tag">${r.tag}</span>` : ""}
-      </p>
-    </li>
-  `;
+  if (!list) {
+    console.error("resultList not found");
+    return;
+  }
+
+  results.forEach(item => {
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+      <a href="${item.link}" style="cursor:pointer;">
+        ${item.title}
+      </a>
+      <p>${item.desc || ""}</p>
+    `;
+
+    list.appendChild(li);
+  });
 });
