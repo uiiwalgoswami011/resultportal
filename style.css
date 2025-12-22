@@ -251,3 +251,29 @@ footer p {
 #resultList li a:hover {
   text-decoration: underline;
 }
+/* ===== FORCE SHOW HOMEPAGE LINKS ===== */
+
+#resultList {
+  display: block !important;
+}
+
+#resultList li {
+  position: relative;
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#resultList li a {
+  display: block !important;
+  color: #1e40af !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+#resultList li a:hover {
+  text-decoration: underline !important;
+}
