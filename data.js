@@ -12,6 +12,14 @@ const latestResults = [
   { title: "CTET Result 2026", link: "ctet-result-2026.html" },
   { title: "Railway Group D Result 2026", link: "railway-group-d-result-2026.html" },
   { title: "NEET UG Result 2026", link: "neet-ug-result-2026.html" }
+ {
+  title: "UP Board 10th Result 2026",
+  link: "up-board-10th-result-2026.html"
+},
+{
+  title: "UP Board 12th Result 2026",
+  link: "up-board-12th-result-2026.html"
+}
 ];
 
 // ===============================
