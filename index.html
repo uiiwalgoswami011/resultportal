@@ -19,65 +19,80 @@
 </head>
 
 <body>
-  <!-- ✅ HEADER NAVBAR -->
-  <header class="navbar">
-    <div class="logo">Exam Result Point</div>
-    <button class="menu-btn" id="menuBtn">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="#latest">Latest Results</a>
-      <a href="#upcoming">Upcoming</a>
-      <a href="#jobs">Jobs</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- ✅ MAIN 3-COLUMN CONTENT -->
-  <main class="container">
-    <!-- COLUMN 1 -->
-    <section class="card" id="latest">
-      <h2>📢 Latest Results</h2>
-      <ul>
-  <li><a href="bihar-board-10th-result-2026.html">Bihar Board 10th Result 2026</a></li>
-  <li><a href="bihar-board-12th-result-2026.html">Bihar Board 12th Result 2026</a></li>
-  <li><a href="cbse-10th-result-2026.html">CBSE 10th Result 2026</a></li>
-  <li><a href="cbse-12th-result-2026.html">CBSE 12th Result 2026</a></li>
-  <li><a href="ssc-gd-result-2026.html">SSC GD Result 2026</a></li>
-  <li><a href="jeemain-result-2026.html">JEE Main Result 2026</a></li>
-  <li><a href="cuet-ug-result-2026.html">CUET UG Result 2026</a></li>
-  <li><a href="ctet-result-2026.html">CTET Result 2026</a></li>
-  <li><a href="railway-group-d-result-2026.html">Railway Group D Result 2026</a></li>
-  <li><a href="neet-ug-result-2026.html">NEET UG Result 2026</a></li>
-</ul>
-    </section>
+<!-- HEADER -->
+<header class="top-header">
+  <div class="logo">ExamResultPoint.in</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
 
-    <!-- COLUMN 2 -->
-    <section class="card highlight" id="upcoming">
-      <h2>⏳ Upcoming Results</h2>
-      <ul>
-        <li>CUET UG Result 2026 – Expected Soon</li>
-        <li>Railway Group D Result – Awaited</li>
-        <li>NEET UG Result 2026 – Coming Soon</li>
-      </ul>
-    </section>
+<!-- MOBILE MENU -->
+<nav id="mobileMenu" class="mobile-menu">
+  <a href="index.html">🏠 Home</a>
+  <a href="#latest">📢 Latest Results</a>
+  <a href="#upcoming">⏳ Upcoming</a>
+  <a href="#jobs">💼 Jobs</a>
+  <a href="contact.html">📞 Contact</a>
+</nav>
 
-    <!-- COLUMN 3 -->
-    <section class="card" id="jobs">
-      <h2>💼 Job Notifications</h2>
-      <ul>
-        <li><a href="#">SSC GD 2026 New Vacancy</a></li>
-        <li><a href="#">Railway Group D Bharti</a></li>
-        <li><a href="#">Police Constable Form</a></li>
-        <li><a href="#">Army GD 2026 Recruitment</a></li>
-      </ul>
-    </section>
-  </main>
+<!-- HERO SECTION (TOP IMAGE + INTRO) -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Latest Exam Results & Job Updates</h1>
+    <p>Bihar Board, CBSE, SSC, Railway, CUET, JEE aur sabhi exams ke latest results yahan check karein.</p>
+  </div>
+  <div class="hero-img">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Exam Results">
+  </div>
+</section>
 
-  <!-- ✅ FOOTER -->
-  <footer>
-    <p>© 2025 Exam Result Point | All Rights Reserved</p>
-  </footer>
+<!-- MAIN CONTENT -->
+<main class="container">
 
-  <script src="script.js"></script>
+  <!-- LATEST RESULTS -->
+  <section class="card highlight" id="latest">
+    <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png"> Latest Results</h2>
+
+    <!-- 🔴 YAHI SIRF UPDATE KARNA HAI AAGE -->
+    <a href="bihar-board-10th-result-2026.html">Bihar Board 10th Result 2026</a>
+    <a href="bihar-board-12th-result-2026.html">Bihar Board 12th Result 2026</a>
+    <a href="cbse-10th-result-2026.html">CBSE 10th Result 2026</a>
+    <a href="cbse-12th-result-2026.html">CBSE 12th Result 2026</a>
+    <a href="ssc-gd-result-2026.html">SSC GD Result 2026</a>
+    <a href="jeemain-result-2026.html">JEE Main Result 2026</a>
+    <a href="cuet-ug-result-2026.html">CUET UG Result 2026</a>
+    <a href="ctet-result-2026.html">CTET Result 2026</a>
+    <a href="railway-group-d-result-2026.html">Railway Group D Result 2026</a>
+    <a href="neet-ug-result-2026.html">NEET UG Result 2026</a>
+  </section>
+
+  <!-- UPCOMING RESULTS -->
+  <section class="card orange" id="upcoming">
+    <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/512/747/747310.png"> Upcoming Results</h2>
+
+    <!-- 🔴 YAHAN SIRF TEXT CHANGE KARNA -->
+    <p>CUET UG Result – Expected Soon</p>
+    <p>Railway Group D Result – Awaited</p>
+    <p>NEET UG Result – Coming Soon</p>
+  </section>
+
+  <!-- JOB ALERTS -->
+  <section class="card green" id="jobs">
+    <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"> Job Alerts</h2>
+
+    <!-- 🔴 YAHAN SIRF TEXT CHANGE KARNA -->
+    <p>SSC GD New Vacancy – Notification Soon</p>
+    <p>Railway Group D Bharti – Upcoming</p>
+    <p>Army GD Recruitment – Expected</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 ExamResultPoint.in | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
