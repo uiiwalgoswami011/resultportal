@@ -21,11 +21,20 @@
 <body>
 
 <!-- HEADER -->
-<header class="top-header">
-  <div class="logo">ExamResultPoint.in</div>
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
-</header>
+<!-- TOP HEADER -->
+<header class="topbar">
+  <div class="logo">Exam Result Point</div>
 
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 <!-- MOBILE MENU -->
 <nav id="mobileMenu" class="mobile-menu">
   <a href="index.html">🏠 Home</a>
@@ -50,16 +59,16 @@
 <main class="container">
 
   <!-- LATEST RESULTS -->
+<!-- LATEST RESULTS -->
 <section class="card highlight" id="latest">
   <h2>
     <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png">
     Latest Results
   </h2>
 
-  <!-- AUTO RESULTS WILL LOAD HERE -->
+  <!-- JS yahin data dalega -->
   <div id="resultList"></div>
 </section>
-
   <!-- UPCOMING RESULTS -->
   <section class="card orange" id="upcoming">
     <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/512/747/747310.png"> Upcoming Results</h2>
