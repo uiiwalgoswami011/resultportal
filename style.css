@@ -563,3 +563,141 @@ footer {
     display: flex;
   }
 }
+/* HEADER */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #0b5ed7;
+  color: #fff;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 75%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 14px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  color: #000;
+  text-decoration: none;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eef4ff;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 22px;
+  color: #0b5ed7;
+}
+
+.hero-img img {
+  width: 120px;
+}
+
+/* LAYOUT */
+.container {
+  padding: 15px;
+}
+
+.card {
+  background: #fff;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  color: #0b5ed7;
+}
+
+.card a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.card p {
+  padding: 6px 0;
+}
+
+.icon {
+  width: 22px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* COLOR BORDERS */
+.highlight { border-left: 5px solid #ff5722; }
+.orange { border-left: 5px solid orange; }
+.green { border-left: 5px solid green; }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  background: #f1f1f1;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .hero {
+    margin: 20px;
+  }
+}
+
+/* MOBILE HERO */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    margin-top: 10px;
+  }
+}
