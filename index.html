@@ -22,18 +22,24 @@
 
 <!-- HEADER -->
 <!-- TOP HEADER -->
-<header class="topbar">
-  <div class="logo">Exam Result Point</div>
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="index.html">ExamResultPoint</a>
+    </div>
 
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <!-- ☰ Mobile Menu Button -->
+    <div class="menu-btn" id="menuBtn">☰</div>
 
-  <nav id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="disclaimer.html">Disclaimer</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 <!-- MOBILE MENU -->
 <nav id="mobileMenu" class="mobile-menu">
