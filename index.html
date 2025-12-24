@@ -19,54 +19,59 @@
 </head>
 
 <body>
-
-  
-  <!-- ===== HEADER ===== -->
-  <header>
-    <h1>Result Portal 2026</h1>
-    <p>All Board & Competitive Exam Results – One Place</p>
+  <!-- ✅ HEADER NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Exam Result Point</div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="#latest">Latest Results</a>
+      <a href="#upcoming">Upcoming</a>
+      <a href="#jobs">Jobs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
-  <main>
-
-    <section>
-      <h2>Latest Exam Results 2026</h2>
-      <p>
-        Is portal par aap Bihar Board, CBSE, UP Board, CUET UG, SSC GD,
-        Railway Group D jaise sabhi important exams ke result check kar sakte hain.
-      </p>
-
-      <!-- JS yahin list generate karega -->
-      <ul id="resultList"></ul>
+  <!-- ✅ MAIN 3-COLUMN CONTENT -->
+  <main class="container">
+    <!-- COLUMN 1 -->
+    <section class="card" id="latest">
+      <h2>📢 Latest Results</h2>
+      <ul>
+        <li><a href="bihar-board-10th-result-2026.html">Bihar Board 10th Result 2026</a></li>
+        <li><a href="cbse-12th-result-2026.html">CBSE 12th Result 2026</a></li>
+        <li><a href="sscgd-result-2026.html">SSC GD Result 2026</a></li>
+        <li><a href="jeemain-result-2026.html">JEE Main Result 2026</a></li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Result Check Karne ka Tarika</h2>
-      <ol>
-        <li>Apne exam ka result link select karein</li>
-        <li>Official website par redirect honge</li>
-        <li>Roll Number / Registration details enter karein</li>
-        <li>Submit karke apna result dekhein</li>
-      </ol>
+    <!-- COLUMN 2 -->
+    <section class="card highlight" id="upcoming">
+      <h2>⏳ Upcoming Results</h2>
+      <ul>
+        <li>CUET UG Result 2026 – Expected Soon</li>
+        <li>Railway Group D Result – Awaited</li>
+        <li>NEET UG Result 2026 – Coming Soon</li>
+      </ul>
     </section>
 
+    <!-- COLUMN 3 -->
+    <section class="card" id="jobs">
+      <h2>💼 Job Notifications</h2>
+      <ul>
+        <li><a href="#">SSC GD 2026 New Vacancy</a></li>
+        <li><a href="#">Railway Group D Bharti</a></li>
+        <li><a href="#">Police Constable Form</a></li>
+        <li><a href="#">Army GD 2026 Recruitment</a></li>
+      </ul>
+    </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ✅ FOOTER -->
   <footer>
-    <p>© 2026 Result Portal | All Rights Reserved</p>
-    <p>
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="privacy.html">Privacy Policy</a> |
-      <a href="disclaimer.html">Disclaimer</a>
-    </p>
+    <p>© 2025 Exam Result Point | All Rights Reserved</p>
   </footer>
 
-  <!-- ===== JS FILES ===== -->
-  <script src="data.js"></script>
-<script src="main.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
