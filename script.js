@@ -1,5 +1,5 @@
 // ===============================
-// MOBILE MENU TOGGLE
+// Mobile Menu Toggle
 // ===============================
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -11,7 +11,7 @@ if (menuBtn && navLinks) {
 }
 
 // ===============================
-// LOAD LATEST RESULTS
+// Load Latest Results
 // ===============================
 const resultList = document.getElementById("resultList");
 
@@ -19,7 +19,7 @@ if (resultList && typeof latestResults !== "undefined") {
   latestResults.forEach(item => {
     const a = document.createElement("a");
     a.href = item.link;
-    a.innerText = item.title;
+    a.textContent = item.title;
     a.className = "result-link";
     resultList.appendChild(a);
   });
