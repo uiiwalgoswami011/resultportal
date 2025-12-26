@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(html => {
         headerDiv.innerHTML = html;
 
-        // MENU BUTTON AFTER HEADER LOAD
+        // MOBILE MENU (AFTER HEADER LOAD)
+        // ======================
         const menuBtn = document.getElementById("menuBtn");
         const navLinks = document.getElementById("navLinks");
 
@@ -19,7 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
             navLinks.classList.toggle("active");
           });
         }
-      });
+      })
+      .catch(err => console.error("Header load error:", err));
+  }
+
+});
   }
 
   // =========================
