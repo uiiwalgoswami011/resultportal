@@ -27,4 +27,11 @@ if (typeof latestResults !== "undefined") {
       resultList.appendChild(a);
     });
   }
+  // Load common header
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    const headerDiv = document.getElementById("header");
+    if (headerDiv) headerDiv.innerHTML = data;
+  });
 }
