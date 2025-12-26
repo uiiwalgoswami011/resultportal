@@ -1,37 +1,47 @@
-// ================================
-// MOBILE MENU TOGGLE
-// ================================
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+// ===============================
+// LOAD COMMON HEADER (VERY IMPORTANT)
+// ===============================
+document.addEventListener("DOMContentLoaded", function () {
+  const headerDiv = document.getElementById("header");
 
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-}
+  if (headerDiv) {
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        headerDiv.innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Header load error:", error);
+      });
+  }
 
-// ================================
-// LOAD LATEST RESULTS
-// ================================
-if (typeof latestResults !== "undefined") {
-  const resultList = document.getElementById("resultList");
+  // ===============================
+  // MOBILE MENU TOGGLE
+  // ===============================
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
 
-  if (resultList) {
-    resultList.innerHTML = ""; // clear old
-
-    latestResults.forEach(item => {
-      const a = document.createElement("a");
-      a.href = item.link;
-      a.innerText = item.title;
-      a.className = "result-link";
-      resultList.appendChild(a);
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
     });
   }
-  // Load common header
-fetch("header.html")
-  .then(res => res.text())
-  .then(data => {
-    const headerDiv = document.getElementById("header");
-    if (headerDiv) headerDiv.innerHTML = data;
-  });
-}
+
+  // ===============================
+  // LOAD LATEST RESULTS
+  // ===============================
+  if (typeof latestResults !== "undefined") {
+    const resultList = document.getElementById("resultList");
+
+    if (resultList) {
+      resultList.innerHTML = "";
+      latestResults.forEach(item => {
+        const a = document.createElement("a");
+        a.href = item.link;
+        a.innerText = item.title;
+        a.className = "result-link";
+        resultList.appendChild(a);
+      });
+    }
+  }
+});
