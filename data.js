@@ -1,4 +1,8 @@
 const latestResults = [
+  {
+  title: "Bihar STET Result 2025 (OUT Soon)",
+  link: "bihar-stet-result-2025.html"
+},
   { title: "Bihar Board 10th Result 2026", link: "bihar-board-10th-result-2026.html" },
   { title: "Bihar Board 12th Result 2026", link: "bihar-board-12th-result-2026.html" },
   { title: "CBSE 10th Result 2026", link: "cbse-10th-result-2026.html" },
