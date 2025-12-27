@@ -869,3 +869,39 @@ header {
     display: flex;
   }
 }
+.link-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.link-table th,
+.link-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.link-table th {
+  background: #0b5ed7;
+  color: #fff;
+}
+
+.link-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #198754;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-link:hover {
+  background: #157347;
+}
