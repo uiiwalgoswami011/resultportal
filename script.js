@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ===== HEADER LOAD ===== */
+  // ===== HEADER LOAD =====
   const headerDiv = document.getElementById("header");
-
   if (headerDiv) {
     fetch("header.html")
       .then(res => res.text())
@@ -17,22 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
             navLinks.classList.toggle("active");
           });
         }
-      });
+      })
+      .catch(err => console.error("Header load error:", err));
   }
 
-  /* ===== LATEST RESULTS (HOME ONLY) ===== */
+  // ===== LATEST RESULTS LOAD =====
   if (typeof latestResults !== "undefined") {
-    const box = document.getElementById("latest-results");
+    const latestBox = document.getElementById("resultList"); // ✅ FIXED
 
-    if (box) {
-      box.innerHTML = "";
+    if (latestBox) {
+      latestBox.innerHTML = "";
 
       latestResults.forEach(item => {
         const a = document.createElement("a");
-        a.href = item.link;
+        a.href = item.link;     // ✅ correct key
         a.className = "result-link";
         a.textContent = item.title;
-        box.appendChild(a);
+        latestBox.appendChild(a);
       });
     }
   }
