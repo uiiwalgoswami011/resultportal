@@ -1,17 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
+ddocument.addEventListener("DOMContentLoaded", () => {
 
-  // ======================
-  // LOAD HEADER
-  // ======================
   const headerDiv = document.getElementById("header");
 
   if (headerDiv) {
     fetch("header.html")
       .then(res => res.text())
-      .then(html => {
-        headerDiv.innerHTML = html;
+      .then(data => {
+        headerDiv.innerHTML = data;
 
-        // MOBILE MENU (after header load)
+        // mobile menu
         const menuBtn = document.getElementById("menuBtn");
         const navLinks = document.getElementById("navLinks");
 
@@ -24,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Header load error:", err));
   }
 
+});
   // ======================
   // LOAD LATEST RESULTS
   // ======================
