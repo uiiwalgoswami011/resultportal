@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       latestResults.forEach(item => {
         const a = document.createElement("a");
-        a.href = item.url;
+        a.href = item.link;
         a.className = "result-link";
         a.textContent = item.title;
         box.appendChild(a);
