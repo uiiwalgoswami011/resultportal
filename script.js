@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ===== LOAD HEADER ===== */
+  // =====================
+  // LOAD HEADER
+  // =====================
   const headerDiv = document.getElementById("header");
+
   if (headerDiv) {
-    fetch("header.html")
+    fetch("/header.html")   // 🔥 IMPORTANT CHANGE
       .then(res => res.text())
       .then(html => {
         headerDiv.innerHTML = html;
 
-        const menuBtn = document.querySelector(".menu-btn");
-        const navLinks = document.querySelector(".nav-links");
+        // MOBILE MENU AFTER HEADER LOAD
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
 
         if (menuBtn && navLinks) {
           menuBtn.addEventListener("click", () => {
@@ -20,7 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Header load error:", err));
   }
 
-  /* ===== LOAD LATEST RESULTS (HOME) ===== */
+  // =====================
+  // LOAD LATEST RESULTS (HOME)
+  // =====================
   if (typeof latestResults !== "undefined") {
     const latestBox = document.getElementById("resultList");
 
