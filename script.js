@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ===== HEADER LOAD =====
+  /* ===== LOAD HEADER ===== */
   const headerDiv = document.getElementById("header");
   if (headerDiv) {
     fetch("header.html")
@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(html => {
         headerDiv.innerHTML = html;
 
-        const menuBtn = document.getElementById("menuBtn");
-        const navLinks = document.getElementById("navLinks");
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
 
         if (menuBtn && navLinks) {
           menuBtn.addEventListener("click", () => {
@@ -20,16 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Header load error:", err));
   }
 
-  // ===== LATEST RESULTS LOAD =====
+  /* ===== LOAD LATEST RESULTS (HOME) ===== */
   if (typeof latestResults !== "undefined") {
-    const latestBox = document.getElementById("resultList"); // ✅ FIXED
+    const latestBox = document.getElementById("resultList");
 
     if (latestBox) {
       latestBox.innerHTML = "";
 
       latestResults.forEach(item => {
         const a = document.createElement("a");
-        a.href = item.link;     // ✅ correct key
+        a.href = item.link;
         a.className = "result-link";
         a.textContent = item.title;
         latestBox.appendChild(a);
