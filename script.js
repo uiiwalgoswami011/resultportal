@@ -1,14 +1,17 @@
-ddocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
+  /* =========================
+     LOAD HEADER (ALL PAGES)
+  ========================== */
   const headerDiv = document.getElementById("header");
 
   if (headerDiv) {
     fetch("header.html")
       .then(res => res.text())
-      .then(data => {
-        headerDiv.innerHTML = data;
+      .then(html => {
+        headerDiv.innerHTML = html;
 
-        // mobile menu
+        // MOBILE MENU (3 line)
         const menuBtn = document.getElementById("menuBtn");
         const navLinks = document.getElementById("navLinks");
 
@@ -21,22 +24,21 @@ ddocument.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Header load error:", err));
   }
 
-});
-  // ======================
-  // LOAD LATEST RESULTS
-  // ======================
-  if (typeof latestResults !== "undefined") {
-    const resultList = document.getElementById("resultList");
+  /* =========================
+     LOAD LATEST RESULTS (HOME)
+  ========================== */
+  if (typeof resultsData !== "undefined") {
+    const latestBox = document.getElementById("latest-results");
 
-    if (resultList) {
-      resultList.innerHTML = "";
+    if (latestBox) {
+      latestBox.innerHTML = "";
 
-      latestResults.forEach(item => {
+      resultsData.forEach(item => {
         const a = document.createElement("a");
-        a.href = item.link;
-        a.innerText = item.title;
+        a.href = item.url;
         a.className = "result-link";
-        resultList.appendChild(a);
+        a.textContent = item.title;
+        latestBox.appendChild(a);
       });
     }
   }
