@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(html => {
         headerDiv.innerHTML = html;
 
-        // MOBILE MENU (3 line)
+        // MOBILE MENU (3 LINE BUTTON)
         const menuBtn = document.getElementById("menuBtn");
         const navLinks = document.getElementById("navLinks");
 
