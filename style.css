@@ -905,3 +905,21 @@ header {
 .btn-link:hover {
   background: #157347;
 }
+.important-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.important-link {
+  padding: 10px;
+  background: #eef2ff;
+  border-left: 4px solid #1e40af;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.important-link:hover {
+  background: #e0e7ff;
+}
