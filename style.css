@@ -923,3 +923,13 @@ header {
 .important-link:hover {
   background: #e0e7ff;
 }
+/* Important Links – same color as Latest Results */
+.important-link {
+  color: #1e40af;            /* Latest Results jaisa */
+  font-weight: 500;
+}
+
+.important-link:hover {
+  color: #1e3a8a;            /* hover bhi same feel */
+  text-decoration: underline;
+}
