@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uiiwalgoswami011.github.io/resultportal/sitemap.xml
+Sitemap: https://examresultpoint.in/sitemap.xml
