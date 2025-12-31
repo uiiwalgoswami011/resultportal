@@ -3,81 +3,65 @@
 
   <url>
     <loc>https://examresultpoint.in/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://examresultpoint.in/sscgd-result-2026.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://examresultpoint.in/ssc-chsl-result-2026.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://examresultpoint.in/railway-group-d-result-2026.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://examresultpoint.in/ctet-result-2026.html</loc>
+    <loc>https://examresultpoint.in/aadhaar-status-check-by-mobile.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://examresultpoint.in/cuet-ug-result-2026.html</loc>
+    <loc>https://examresultpoint.in/voter-id-status-check.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://examresultpoint.in/jeemain-result-2026.html</loc>
+    <loc>https://examresultpoint.in/bihar-stet-result-2025.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://examresultpoint.in/about.html</loc>
+    <loc>https://examresultpoint.in/rrb-group-d-answer-key.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://examresultpoint.in/contact.html</loc>
+    <loc>https://examresultpoint.in/up-police-constable-vacancy-23679.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
-  <url>
-  <loc>https://examresultpoint.in/bihar-stet-result-2025.html</loc>
-  <lastmod>2025-12-26</lastmod>
-  <priority>0.8</priority>
-</url>
-  <url>
-  <loc>https://examresultpoint.in/bihar-board-10th-admit-card-2026.html</loc>
-  <lastmod>2025-12-27</lastmod>
-  <priority>0.8</priority>
-</url>
 
-<url>
-  <loc>https://examresultpoint.in/bihar-board-12th-admit-card-2026.html</loc>
-  <lastmod>2025-12-27</lastmod>
-  <priority>0.8</priority>
-</url>
-  <url>
-  <loc>https://examresultpoint.in/pan-aadhaar-link-status.html</loc>
-  <lastmod>2025-12-28</lastmod>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://examresultpoint.in/aadhaar-status-check-by-mobile.html</loc>
-  <priority>0.9</priority>
-</url>
-  <url>
-  <loc>https://examresultpoint.in/voter-id-status-check.html</loc>
-  <priority>0.9</priority>
-</url>
-  <url>
-  <loc>https://examresultpoint.in/rrb-group-d-answer-key.html</loc>
-  <priority>0.9</priority>
-</url>
-  <url>
-  <loc>https://examresultpoint.in/bihar-stet-result-2025.html</loc>
-</url>
- <url>
-  <url>
-  <loc>https://examresultpoint.in/up-police-constable-vacancy-23679.html</loc>
-  <lastmod>2025-01-01</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.0</priority>
-</url>
 </urlset>
