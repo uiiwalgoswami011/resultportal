@@ -971,3 +971,18 @@ transition: 0.3s ease;
 background: linear-gradient(135deg, #0d47a1, #002171);
 transform: translateY(-3px);
 }
+/* Highlight Important Link */
+
+.highlight-link {
+color: #ffffff;
+background: #d32f2f;
+padding: 8px 12px;
+border-radius: 6px;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+}
+
+.highlight-link:hover {
+background: #b71c1c;
+}
