@@ -10,7 +10,8 @@
 }
 
 /* ===== BODY ===== */
-body {
+body
+{
   background: linear-gradient(180deg, #f7f9ff, #eef2ff);
   color: #1f2937;
   line-height: 1.8;
@@ -932,4 +933,41 @@ header {
 .important-link:hover {
   color: #1e3a8a;            /* hover bhi same feel */
   text-decoration: underline;
+}
+/* IMPORTANT LINKS STYLING */
+
+.important-links-box {
+background: #f8f9ff;
+padding: 20px;
+border-radius: 12px;
+margin: 20px 0;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.important-links-box h2 {
+margin-bottom: 15px;
+color: #0d47a1;
+font-size: 22px;
+}
+
+.important-links-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 12px;
+}
+
+.imp-link {
+display: block;
+background: linear-gradient(135deg, #1565c0, #0d47a1);
+color: #fff;
+padding: 14px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s ease;
+}
+
+.imp-link:hover {
+background: linear-gradient(135deg, #0d47a1, #002171);
+transform: translateY(-3px);
 }
